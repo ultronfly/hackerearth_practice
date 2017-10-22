@@ -1,0 +1,19 @@
+package com.company;
+import java.util.Scanner;
+
+public class sumofn {
+    public static void main(String[] args) {
+        System.out.println("How many elements do you want");
+        Scanner s = new Scanner(System.in);
+                int n = s.nextInt();
+        System.out.println(n);
+        int i,sum =0;
+        System.out.println("Enter any "+n+ " numbers between 10 and 100");
+        int arr[] = new int[n];
+        for (i = 0;i< n; i++){
+            arr[i] = s.nextInt();
+            sum =  sum + arr[i];
+        }
+        System.out.println(sum);
+    }
+}
